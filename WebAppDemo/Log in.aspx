@@ -18,10 +18,16 @@
 
     <div class ="boxes">  
         Username:&nbsp;
-        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+        <asp:TextBox ID="username" runat="server" OnTextChanged="username_TextChanged"></asp:TextBox>
         <br />
-        Password:&nbsp;
-        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+        Password: &nbsp;
+        <asp:TextBox ID="password" runat="server" OnTextChanged="password_TextChanged"></asp:TextBox>
+        <br />
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Enter" />
+        <br />
+        <br />
+        New user?
+        <a href="Sign Up.aspx">Sign Up</a>
     </div>
 
 </asp:Content>

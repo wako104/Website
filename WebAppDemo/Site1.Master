@@ -12,9 +12,9 @@
 <body>
     <ul>
         <li><a href="Home.aspx">Home</a></li>
-        <li><a href="Premier League.aspx">Premier League</a></li>
         <li><a href="Blog Posts.aspx">Blog Posts</a></li>
-        <li><a href="About.aspx">About</a></li>
+        <li style="float:right"><a href="About.aspx">About</a></li>
+        <li style="float:right"><a href="Log in.aspx">Log in</a></li>
     </ul>
     <form id="form1" runat="server">
         <div>

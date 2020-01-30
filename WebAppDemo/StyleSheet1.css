@@ -1,6 +1,6 @@
 ﻿body {
     background-color: #fbfbff;
-
+    font-family: Verdana, serif;
 }
 
 ul {
@@ -24,8 +24,8 @@ li a {
 }
 
 li a:hover {
-    background-color: gray;
-}
+    border-bottom: 3px solid #ff6a00;
+    }
 
 .signup {
     color: dodgerblue;
@@ -40,4 +40,21 @@ li a:hover {
 .boxes {
     color: seagreen;
     text-align: center;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
 }

@@ -3,12 +3,5 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <p>
-        Welcome to the demo site.</p>
-    <p>
-        <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/Log in.aspx">Log in</asp:LinkButton>
-    &nbsp;or
-        <asp:LinkButton ID="LinkButton2" runat="server" PostBackUrl="~/Sign Up.aspx" OnClick="LinkButton2_Click">Sign Up</asp:LinkButton>
-    </p>
-    <p>
-        &nbsp;</p>
+        Welcome to the site.</p>
     </asp:Content>

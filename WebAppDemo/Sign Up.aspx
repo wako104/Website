@@ -17,19 +17,19 @@
     <div class="boxes">
     <p>
         First Name:&nbsp;
-        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+        <asp:TextBox ID="fname" runat="server" OnTextChanged="fname_TextChanged"></asp:TextBox>
     </p>
     <p>
         Last Name:&nbsp;
-        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+        <asp:TextBox ID="lname" runat="server"></asp:TextBox>
     </p>
     <p>
         Username:&nbsp;&nbsp;
-        <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+        <asp:TextBox ID="uname" runat="server"></asp:TextBox>
     </p>
     <p>
-        Password:&nbsp;&nbsp;
-        <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+        Password:&nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="pword" runat="server"></asp:TextBox>
     </p>
         </div>
 </asp:Content>
