@@ -13,56 +13,19 @@
      <div id="navbar" class="navbar">
   <a class="not" href="#">Sale</a>
   <div class="dropdown">
-    <button class="dropbtn">Blo</button>
+    <button class="dropbtn">Blog Posts</button>
     <div class="dropdown-content">
     <div class="row">
       <div class="column">
-      <h2 class="top">Foods</h2>
-      <a href="#">Bars</a>
-      <a href="#">Baking ingredients</a>
-      <a href="#">Breakfast</a>
-      <a href="#">Beef</a>
-    </div>
-    <div class="column">
-      <a class="top" href="#">Dried fruits</a>
-      <a href="#">Drinks</a>
-      <a href="#">Fish</a>
-      <a href="#">Pork</a>
-      <a href="#">Snacks</a>
-    </div>
-      <div class="column">
-      <h2 class="top">Nut Butters</h2>
-      <a href="#">Peanut Butter</a>
-      <a href="#">Almond Butter</a>
-      <a href="#">Hazelnut Butter</a>
-      <a href="#">Pistachio Butter</a>  
-    </div>
-      <div class="column">
-      <h2 class="top">Trending</h2>
-      <a href="#">Peanut Butter 1KG</a>  
-      <a href="#">Protein Snack Bars x12</a>    
-      <a href="#">Oats 1KG</a>
-      <a href="#">High Protein Bagels</a>    
-      </div>
+      <a href="#">Top Posts</a>
+      <a href="#">Blogs By Team</a>
+      <a href="#">Recent Posts</a>
     </div>
     </div>
-</div>
-  <div class="dropdown">
-    <button class="dropbtn">Supplements</button>
-    <div class="dropdown-content">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
     </div>
   </div>
   <a class="not" href="#news">News</a>
 </div>
-    <ul>
-        <li><a href="Home.aspx">Home</a></li>
-        <li><a href="Blog Posts.aspx">Blog Posts</a></li>
-        <li style="float:right"><a href="About.aspx">About</a></li>
-        <li style="float:right"><a href="Log in.aspx">Log in</a></li>
-    </ul>
     <form id="form1" runat="server">
         <div>
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
