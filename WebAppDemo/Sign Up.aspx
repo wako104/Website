@@ -16,15 +16,16 @@
     <div class ="boxes">
         Sign Up<br />
         <br />
-        First Name:<asp:TextBox ID="Fname" runat="server" OnTextChanged="Fname"></asp:TextBox>
+        &nbsp;
+        First Name: <asp:TextBox ID="Fname" runat="server" OnTextChanged="Fname_TextChanged" Width="160px"></asp:TextBox>
         <br />
-&nbsp;Username:&nbsp; <asp:TextBox ID="username" runat="server" OnTextChanged="username_TextChanged"></asp:TextBox>
+        &nbsp;Username:&nbsp; <asp:TextBox ID="username" runat="server" OnTextChanged="username_TextChanged" Width="160px"></asp:TextBox>
         <br />
-        Password: &nbsp;
-        <asp:TextBox ID="password" runat="server" OnTextChanged="password_TextChanged"></asp:TextBox>
+        Password:&nbsp;&nbsp;&nbsp; <asp:TextBox ID="password" runat="server" OnTextChanged="password_TextChanged" Width="160px"></asp:TextBox>
         <br />
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Enter" />
         <br />
+
         <br />
         Already have an account?
         <a href="Log in.aspx">Log in</a>

@@ -156,14 +156,7 @@
     margin: auto;
 }
 
-.login {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-    font-family: 'Century Gothic';
-    display: flex;
-    justify-content: flex-start;
-}
+
 .boxes {
     margin: auto;
     padding: 10px;

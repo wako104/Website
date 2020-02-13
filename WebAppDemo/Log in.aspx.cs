@@ -11,16 +11,6 @@ namespace WebAppDemo
 {
     public partial class Log_in : System.Web.UI.Page
     {
-        private SQLiteConnection sql_con;
-        private SQLiteCommand sql_cmd;
-        private SQLiteDataAdapter DB;
-        private DataSet DS = new DataSet();
-        private DataTable DT = new DataTable();
-        private void SetConnection()
-        {
-            sql_con = new SQLiteConnection
-                ("Data Source=DemoT.db;Version=3;New=False;Compress=True;");
-        }
         protected void Page_Load(object sender, EventArgs e)
         {
 
