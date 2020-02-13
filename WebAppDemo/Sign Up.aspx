@@ -12,24 +12,22 @@
     <br />
     <br />
     <br />
-    <p class="signup">
-        Sign Up</p>
-    <div class="boxes">
-    <p>
-        First Name:&nbsp;
-        <asp:TextBox ID="fname" runat="server" OnTextChanged="fname_TextChanged"></asp:TextBox>
-    </p>
-    <p>
-        Last Name:&nbsp;
-        <asp:TextBox ID="lname" runat="server"></asp:TextBox>
-    </p>
-    <p>
-        Username:&nbsp;&nbsp;
-        <asp:TextBox ID="uname" runat="server"></asp:TextBox>
-    </p>
-    <p>
-        Password:&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="pword" runat="server"></asp:TextBox>
-    </p>
-        </div>
+    <div class ="center">
+    <div class ="boxes">
+        Sign Up<br />
+        <br />
+        First Name:<asp:TextBox ID="Fname" runat="server" OnTextChanged="Fname"></asp:TextBox>
+        <br />
+&nbsp;Username:&nbsp; <asp:TextBox ID="username" runat="server" OnTextChanged="username_TextChanged"></asp:TextBox>
+        <br />
+        Password: &nbsp;
+        <asp:TextBox ID="password" runat="server" OnTextChanged="password_TextChanged"></asp:TextBox>
+        <br />
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Enter" />
+        <br />
+        <br />
+        Already have an account?
+        <a href="Log in.aspx">Log in</a>
+    </div>
+    </div>
 </asp:Content>

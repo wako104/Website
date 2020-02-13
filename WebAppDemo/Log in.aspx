@@ -12,13 +12,11 @@
     <br />
     <br />
     <br />
-    <p class ="login">
-        Log in
-    </p>
-
-    <div class ="boxes">  
-        Username:&nbsp;
-        <asp:TextBox ID="username" runat="server" OnTextChanged="username_TextChanged"></asp:TextBox>
+    <div class ="center">
+    <div class ="boxes">
+        Log in<br />
+        <br />
+        Username:&nbsp; <asp:TextBox ID="username" runat="server" OnTextChanged="username_TextChanged"></asp:TextBox>
         <br />
         Password: &nbsp;
         <asp:TextBox ID="password" runat="server" OnTextChanged="password_TextChanged"></asp:TextBox>
@@ -28,6 +26,7 @@
         <br />
         New user?
         <a href="Sign Up.aspx">Sign Up</a>
+    </div>
     </div>
 
 </asp:Content>

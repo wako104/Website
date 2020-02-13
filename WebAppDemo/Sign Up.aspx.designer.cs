@@ -13,39 +13,39 @@ namespace WebAppDemo {
     public partial class Sign_Up {
         
         /// <summary>
-        /// fname control.
+        /// Fname control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox fname;
+        protected global::System.Web.UI.WebControls.TextBox Fname;
         
         /// <summary>
-        /// lname control.
+        /// username control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox lname;
+        protected global::System.Web.UI.WebControls.TextBox username;
         
         /// <summary>
-        /// uname control.
+        /// password control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox uname;
+        protected global::System.Web.UI.WebControls.TextBox password;
         
         /// <summary>
-        /// pword control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox pword;
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }

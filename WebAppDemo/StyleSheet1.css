@@ -26,7 +26,7 @@
     font-family: 'Century Gothic';
     letter-spacing: 0.2em;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     z-index: 1;
 }
 
@@ -80,7 +80,7 @@
     display: none;
     position: absolute;
     background-color: #FCFCFC;
-    width: 100%;
+    width: 20%;
     left: 0;
     /* margin-bottom: 100px;*/
     z-index: 1;
@@ -160,4 +160,17 @@
     margin: auto;
     width: 50%;
     padding: 10px;
+    font-family: 'Century Gothic';
+    display: flex;
+    justify-content: flex-start;
+}
+.boxes {
+    margin: auto;
+    padding: 10px;
+    font-family: 'Century Gothic';
+    align-content: center;
+}
+
+.center {
+    text-align: center;
 }
