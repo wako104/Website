@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using System.Data.SQLite;
+using System.Data.OleDb;
 
 namespace WebAppDemo
 {
@@ -15,29 +15,37 @@ namespace WebAppDemo
 
         }
 
-        protected void fname_TextChanged(object sender, EventArgs e)
+        protected void Fname_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        protected void username_TextChanged(object sender, EventArgs e)
+        protected void Lname_TextChanged(object sender, EventArgs e)
         {
 
         }
 
-        protected void password_TextChanged(object sender, EventArgs e)
+        protected void Username_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Email_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Password_TextChanged(object sender, EventArgs e)
         {
 
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+             
 
         }
 
-        protected void Fname_TextChanged(object sender, EventArgs e)
-        {
 
-        }
     }
 }

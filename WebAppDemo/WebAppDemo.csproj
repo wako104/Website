@@ -84,10 +84,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
-    <Content Include="App_Data\Database.mdf" />
-    <Content Include="App_Data\Database_log.ldf">
-      <DependentUpon>Database.mdf</DependentUpon>
-    </Content>
+    <Content Include="App_Data\Database3.accdb" />
     <Content Include="Blog Posts.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Home.aspx" />
