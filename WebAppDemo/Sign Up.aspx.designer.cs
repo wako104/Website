@@ -13,49 +13,49 @@ namespace WebAppDemo {
     public partial class Sign_Up {
         
         /// <summary>
-        /// Fname control.
+        /// FnameTb control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Fname;
+        protected global::System.Web.UI.WebControls.TextBox FnameTb;
         
         /// <summary>
-        /// Lname control.
+        /// LnameTb control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Lname;
+        protected global::System.Web.UI.WebControls.TextBox LnameTb;
         
         /// <summary>
-        /// Username control.
+        /// UsernameTb control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Username;
+        protected global::System.Web.UI.WebControls.TextBox UsernameTb;
         
         /// <summary>
-        /// Email control.
+        /// EmailTb control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Email;
+        protected global::System.Web.UI.WebControls.TextBox EmailTb;
         
         /// <summary>
-        /// Password control.
+        /// PasswordTb control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Password;
+        protected global::System.Web.UI.WebControls.TextBox PasswordTb;
         
         /// <summary>
         /// Button1 control.

@@ -84,7 +84,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
-    <Content Include="App_Data\Database3.accdb" />
     <Content Include="Blog Posts.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Home.aspx" />
@@ -160,6 +159,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App_Data\" />
     <Folder Include="Images\" />
     <Folder Include="Models\" />
   </ItemGroup>

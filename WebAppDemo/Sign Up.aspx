@@ -16,18 +16,17 @@
     <div class ="boxes">
         Sign Up<br />
         <br />
-        <asp:TextBox ID="Fname" runat="server" OnTextChanged="Fname_TextChanged" Width="160px"></asp:TextBox>
+        <asp:TextBox ID="FnameTb" runat="server" OnTextChanged="Fname_TextChanged" Width="100px"></asp:TextBox>
+        <asp:TextBox ID="LnameTb" runat="server" OnTextChanged="Lname_TextChanged" Width="100px"></asp:TextBox>
         <br />
-        <asp:TextBox ID="Lname" runat="server" OnTextChanged="Lname_TextChanged" Width="160px"></asp:TextBox>
+        <asp:TextBox ID="UsernameTb" runat="server" OnTextChanged="Username_TextChanged" Width="200px"></asp:TextBox>
         <br />
-        <asp:TextBox ID="Username" runat="server" OnTextChanged="Username_TextChanged" Width="160px"></asp:TextBox>
+        <asp:TextBox ID="EmailTb" runat="server" OnTextChanged="Email_TextChanged" Width="200px"></asp:TextBox>
         <br />
-        <asp:TextBox ID="Email" runat="server" OnTextChanged="Email_TextChanged" Width="160px"></asp:TextBox>
-        <br />
-        <asp:TextBox ID="Password" runat="server" OnTextChanged="Password_TextChanged" Width="160px"></asp:TextBox>
+        <asp:TextBox ID="PasswordTb" runat="server" OnTextChanged="Password_TextChanged" Width="200px" TextMode="Password"></asp:TextBox>
         <br />
         <br />
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Enter" />
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Submit" CausesValidation="False" />
         <br />
 
         <br />
