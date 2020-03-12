@@ -16,19 +16,22 @@
     <div class ="boxes">
         Sign Up<br />
         <br />
-        <asp:TextBox ID="FnameTb" runat="server" OnTextChanged="Fname_TextChanged" Width="100px"></asp:TextBox>
-        <asp:TextBox ID="LnameTb" runat="server" OnTextChanged="Lname_TextChanged" Width="100px"></asp:TextBox>
+        <asp:TextBox ID="FnameTb" runat="server" Width="150px" Height="30px" Font-Italic="False" Font-Names="Century Gothic" Font-Overline="False" Font-Size="Small" OnTextChanged="FnameTb_TextChanged" placeholder="First Name" CssClass="padding"></asp:TextBox>
+        &nbsp;
+        <asp:TextBox ID="LnameTb" runat="server" Width="150px" Height="30px" Font-Names="Century Gothic" Font-Size="Small" placeholder="Last Name" CssClass="padding"></asp:TextBox>
         <br />
-        <asp:TextBox ID="UsernameTb" runat="server" OnTextChanged="Username_TextChanged" Width="200px"></asp:TextBox>
         <br />
-        <asp:TextBox ID="EmailTb" runat="server" OnTextChanged="Email_TextChanged" Width="200px"></asp:TextBox>
+        <asp:TextBox ID="UsernameTb" runat="server" Width="313px" Height="30px" placeholder="Username" CssClass="padding" Font-Names="Century Gothic"></asp:TextBox>
         <br />
-        <asp:TextBox ID="PasswordTb" runat="server" OnTextChanged="Password_TextChanged" Width="200px" TextMode="Password"></asp:TextBox>
+        <br />
+        <asp:TextBox ID="EmailTb" runat="server" Width="313px" Height="30px" placeholder="Email" CssClass="padding" Font-Names="Century Gothic"></asp:TextBox>
+        <br />
+        <br />
+        <asp:TextBox ID="PasswordTb" runat="server" Width="313px" Height="30px" TextMode="Password" placeholder="Password" CssClass="padding" Font-Names="Century Gothic"></asp:TextBox>
         <br />
         <br />
         <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Submit" CausesValidation="False" />
         <br />
-
         <br />
         Already have an account?
         <a href="Log in.aspx">Log in</a>

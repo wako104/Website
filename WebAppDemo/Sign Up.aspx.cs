@@ -13,7 +13,7 @@ namespace WebAppDemo
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+ 
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -55,6 +55,9 @@ namespace WebAppDemo
 
         }
 
+        protected void FnameTb_TextChanged(object sender, EventArgs e)
+        {
 
+        }
     }
 }

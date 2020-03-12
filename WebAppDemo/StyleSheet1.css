@@ -158,12 +158,31 @@
 
 
 .boxes {
+    width: 100%;
     margin: auto;
     padding: 10px;
     font-family: 'Century Gothic';
     align-content: center;
 }
+    .boxes:focus {
+        border: 3px solid #555;
+    }
+
+    input[type=text] {
+        border: 1px solid #dbd3d3;
+        border-radius: 4px;
+    }
+
+    input[type=password] {
+        border: 1px solid #dbd3d3;
+        border-radius: 4px;
+    }
+
 
 .center {
     text-align: center;
+}
+
+.padding{
+    padding-left: 10px;
 }
