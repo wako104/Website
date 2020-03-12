@@ -18,14 +18,53 @@ namespace WebAppDemo
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            static int UpdateInsertDeleteRecordsOnDatabase(string connString, string sqlString)
+            {
+                System.Data.OleDb.OleDbConnection conn = new System.Data.OleDb.OleDbConnection();
 
-            OleDbConnection con = new OleDbConnection();
+                conn.ConnectionString = connString;
+                conn.Open();
 
-            OleDbCommand cmd = new OleDbCommand();
+                OleDbCommand cmd = new OleDbCommand(sqlString, conn);
+
+                //Execute the sql
+                OleDbDataReader reader = cmd.ExecuteReader();
+
+                int rowsAffected = 0;
+
+                //Because this is an sql statement that modifies the table
+                //we call the RecordsAffected of the reader object to determnine the number of
+                //rows/records affected by the sql
+                rowsAffected = reader.RecordsAffected;
+                reader.Close();
+                conn.Close();
+
+                //Returning the number of records/rows affected by the sql statement
+                return rowsAffected;
+            }
+
+
+
+            string connString = "Provider = Microsoft.ACE.OLEDB.12.0;Data source= n:\\Database3.accdb";
+            string sql = "Insert User Set UserName = '" + UsernameTb.Text + "', FirstName = '" + FnameTb.Text + "', LastName = '" + LnameTb.Text + "', Email = '" + EmailTb.Text + "', Password = '" + PasswordTb.Text + "'";
+
+            int Result = UpdateInsertDeleteRecordsOnDatabase(connString, sql);
+            if (Result > 0)
+            {
+                lblMessage.Text = "The update was successful";
+            }
+            else
+            {
+                lblMessage.Text = "Record could not be updated - try again";
+            }
+
+            /*OleDbConnection con = new OleDbConnection();
+
+            OleDbCommand cmd = new OleDbCommand("Insert into [User] (UserName, FirstName, LastName, Email, Password) VALUES (@uname, @fname, @lname, @email, @password)", con);
             con.ConnectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\\wcfs5\home\William.Wakeford\Computer Science\NEA PROJECT\Database\Database3.accdb";
             con.Open();
             cmd.Connection = con;
-            cmd.CommandText = @"INSERT INTO [User] (UserName, FirstName, LastName, Email, Password) VALUES (@uname, @fname, @lname, @email, @password)";
+            cmd.CommandText = "Insert into [User] (UserName, FirstName, LastName, Email, Password) VALUES (@uname, @fname, @lname, @email, @password)";
 
 
             if(con.State == ConnectionState.Open)
@@ -51,7 +90,7 @@ namespace WebAppDemo
             else
             {
                 Response.Write("<script>alert('Connection failed');</script>");
-            }
+            }*/
 
         }
 

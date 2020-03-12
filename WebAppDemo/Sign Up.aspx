@@ -30,7 +30,7 @@
         <asp:TextBox ID="PasswordTb" runat="server" Width="313px" Height="30px" TextMode="Password" placeholder="Password" CssClass="padding" Font-Names="Century Gothic"></asp:TextBox>
         <br />
         <br />
-        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Submit" CausesValidation="False" />
+        <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Submit" CausesValidation="False" CssClass="button" Font-Bold="True" Font-Names="Century Gothic" />
         <br />
         <br />
         Already have an account?
