@@ -18,44 +18,29 @@ namespace WebAppDemo
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            static int UpdateInsertDeleteRecordsOnDatabase(string connString, string sqlString)
+            try
             {
-                System.Data.OleDb.OleDbConnection conn = new System.Data.OleDb.OleDbConnection();
+                DBAccess dbsignup = new DBAccess(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\\wcfs5\home\William.Wakeford\Computer Science\NEA PROJECT\Database\Database3.accdb");
 
-                conn.ConnectionString = connString;
-                conn.Open();
+                string sql = "INSERT INTO User(UserName, FirstName, LastName, Email, [Password]";
+                sql = sql + "VALUES('" + UsernameTb + "',  '" + FnameTb.Text + "','" + LnameTb.Text + "', '" + EmailTb.Text + "','" + PasswordTb + ", ";
 
-                OleDbCommand cmd = new OleDbCommand(sqlString, conn);
 
-                //Execute the sql
-                OleDbDataReader reader = cmd.ExecuteReader();
+                if (dbsignup.UpdateInsertDeleteRecordsOnDatabase(sql) == 1)
+                {
+                    Response.Write("<script>alert('sign up successful');</script>");
+                }
 
-                int rowsAffected = 0;
-
-                //Because this is an sql statement that modifies the table
-                //we call the RecordsAffected of the reader object to determnine the number of
-                //rows/records affected by the sql
-                rowsAffected = reader.RecordsAffected;
-                reader.Close();
-                conn.Close();
-
-                //Returning the number of records/rows affected by the sql statement
-                return rowsAffected;
+                else
+                {
+                    Response.Write("<script>alert('sign up unsuccessful');</script>");
+                }
             }
 
-
-
-            string connString = "Provider = Microsoft.ACE.OLEDB.12.0;Data source= n:\\Database3.accdb";
-            string sql = "Insert User Set UserName = '" + UsernameTb.Text + "', FirstName = '" + FnameTb.Text + "', LastName = '" + LnameTb.Text + "', Email = '" + EmailTb.Text + "', Password = '" + PasswordTb.Text + "'";
-
-            int Result = UpdateInsertDeleteRecordsOnDatabase(connString, sql);
-            if (Result > 0)
+            catch
             {
-                lblMessage.Text = "The update was successful";
-            }
-            else
-            {
-                lblMessage.Text = "Record could not be updated - try again";
+                Response.Write("<script>alert('connection unsuccessful');</script>");
+
             }
 
             /*OleDbConnection con = new OleDbConnection();
